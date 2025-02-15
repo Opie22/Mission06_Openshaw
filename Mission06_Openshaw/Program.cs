@@ -1,3 +1,5 @@
+using Mission06_Openshaw.Models;
+using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -12,6 +14,12 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+
+// Register the DbContext.  This is VERY important.
+builder.Services.AddDbContext<MovieContext>(options =>
+        options.UseSqlite(builder.Configuration.GetConnectionString("MovieConnection"))  //Use connection string name
+);
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
