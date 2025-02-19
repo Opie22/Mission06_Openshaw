@@ -29,17 +29,17 @@ public class HomeController : Controller
     {
         _context = context;
     }
-    [HttpPost]
-    public IActionResult AddMovie(Movie movie)
-    {
-        if (ModelState.IsValid)
-        {
-            _context.Movies.Add(movie);
-            _context.SaveChanges();
-            return RedirectToAction("Index"); // Redirect to home after successful submission.
-        }
-        return View(movie); // Return the view with validation errors and the movie.
-    }
+    // [HttpPost]
+    // public IActionResult AddMovie(Movie movie)
+    // {
+    //     if (ModelState.IsValid)
+    //     {
+    //         _context.Movies.Add(movie);
+    //         _context.SaveChanges();
+    //         return RedirectToAction("Index"); // Redirect to home after successful submission.
+    //     }
+    //     return View(movie); // Return the view with validation errors and the movie.
+    // }
     
     
     
