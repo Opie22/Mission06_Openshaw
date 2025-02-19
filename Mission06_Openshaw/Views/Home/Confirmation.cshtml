@@ -1,0 +1,16 @@
+
+@model Mission06_Openshaw.Models.Movie
+
+<h2>Movie Added Successfully!</h2>
+
+<p>The following movie has been added to the database:</p>
+
+<ul>
+    <li>Title: @Model.Title</li>
+    <li>Category: @Model.Category</li>
+    <li>Year: @Model.Year</li>
+    <li>Director: @Model.Director</li>
+    <li>Rating: @Model.Rating</li>
+</ul>
+
+<a asp-action="Index">Return to Home</a>
