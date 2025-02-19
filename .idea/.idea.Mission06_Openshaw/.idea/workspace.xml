@@ -8,14 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff0a776c-b822-4f38-bd0c-885966e74e93" name="Changes" comment="Finally working">
+    <list default="true" id="ff0a776c-b822-4f38-bd0c-885966e74e93" name="Changes" comment="Should be done now">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mission06_Openshaw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mission06_Openshaw/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/JoelHiltonMovies.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/JoelHiltonMovies.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/JoelHiltonMovies.sqlite-shm" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/JoelHiltonMovies.sqlite-shm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/JoelHiltonMovies.sqlite-wal" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/JoelHiltonMovies.sqlite-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/GetToKnowJoel.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/GetToKnowJoel.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Migrations/20250219051726_Initial.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Migrations/20250219051726_Initial.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Migrations/MovieContextModelSnapshot.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +118,7 @@
       <workItem from="1739827462730" duration="11900000" />
       <workItem from="1739941123488" duration="787000" />
       <workItem from="1739941927417" duration="816000" />
-      <workItem from="1739982335223" duration="5538000" />
+      <workItem from="1739982335223" duration="7799000" />
     </task>
     <task id="LOCAL-00001" summary="First Push">
       <option name="closed" value="true" />
@@ -178,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739986883335</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Should be done now">
+      <option name="closed" value="true" />
+      <created>1740004776760</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1740004776760</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +212,7 @@
     <MESSAGE value="trying new things" />
     <MESSAGE value="bugsss" />
     <MESSAGE value="Finally working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finally working" />
+    <MESSAGE value="Should be done now" />
+    <option name="LAST_COMMIT_MESSAGE" value="Should be done now" />
   </component>
 </project>
