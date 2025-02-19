@@ -8,20 +8,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff0a776c-b822-4f38-bd0c-885966e74e93" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/Confirmation.cshtml" afterDir="false" />
+    <list default="true" id="ff0a776c-b822-4f38-bd0c-885966e74e93" name="Changes" comment="Finally working">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mission06_Openshaw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mission06_Openshaw/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/Controllers/HomeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/JoelHiltonMovies.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/JoelHiltonMovies.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Migrations/MovieContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/Migrations/MovieContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Mission06_Openshaw.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/Mission06_Openshaw.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/AddMovie.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/AddMovie.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/AddMovie.cshtml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/GetToKnowJoel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/JoelHiltonMovies.sqlite-shm" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/JoelHiltonMovies.sqlite-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/JoelHiltonMovies.sqlite-wal" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/JoelHiltonMovies.sqlite-wal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/GetToKnowJoel.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/GetToKnowJoel.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/Views/Shared/_Layout.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +41,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/dallenopenshaw/RiderProjects/Mission06_Openshaw/Mission06_Openshaw/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/dallenopenshaw/RiderProjects/Mission06_Openshaw/Mission06_Openshaw/Views/Home/AddMovie.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Mission06_Openshaw/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -126,7 +120,7 @@
       <workItem from="1739827462730" duration="11900000" />
       <workItem from="1739941123488" duration="787000" />
       <workItem from="1739941927417" duration="816000" />
-      <workItem from="1739982335223" duration="4194000" />
+      <workItem from="1739982335223" duration="5538000" />
     </task>
     <task id="LOCAL-00001" summary="First Push">
       <option name="closed" value="true" />
@@ -176,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739942689988</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Finally working">
+      <option name="closed" value="true" />
+      <created>1739986883335</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1739986883335</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +205,7 @@
     <MESSAGE value="a work in progress" />
     <MESSAGE value="trying new things" />
     <MESSAGE value="bugsss" />
-    <option name="LAST_COMMIT_MESSAGE" value="bugsss" />
+    <MESSAGE value="Finally working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finally working" />
   </component>
 </project>
