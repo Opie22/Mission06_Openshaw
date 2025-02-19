@@ -8,21 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff0a776c-b822-4f38-bd0c-885966e74e93" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/AddMovie.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/AddMovie.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/GetToKnowJoel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/GetToKnowJoel.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mission06_Openshaw/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mission06_Openshaw/.idea/aws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mission06_Openshaw/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="ff0a776c-b822-4f38-bd0c-885966e74e93" name="Changes" comment="a work in progress">
+      <change afterPath="$PROJECT_DIR$/Mission06_Openshaw/Models/MovieContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mission06_Openshaw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mission06_Openshaw/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Mission06_Openshaw.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/Mission06_Openshaw.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Models/Movie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/Models/Movie.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Models/MovieContext.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/Privacy.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/AddMovie.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/AddMovie.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +121,7 @@
       <updated>1739588669687</updated>
       <workItem from="1739588671182" duration="4209000" />
       <workItem from="1739827363687" duration="76000" />
-      <workItem from="1739827462730" duration="9101000" />
+      <workItem from="1739827462730" duration="11882000" />
     </task>
     <task id="LOCAL-00001" summary="First Push">
       <option name="closed" value="true" />
@@ -156,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739589824034</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="a work in progress">
+      <option name="closed" value="true" />
+      <created>1739932518451</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1739932518451</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +179,7 @@
     <MESSAGE value="First Push" />
     <MESSAGE value="#2" />
     <MESSAGE value="First push with code" />
-    <option name="LAST_COMMIT_MESSAGE" value="First push with code" />
+    <MESSAGE value="a work in progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="a work in progress" />
   </component>
 </project>
