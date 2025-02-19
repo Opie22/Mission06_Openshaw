@@ -1,5 +1,6 @@
 using Mission06_Openshaw.Models;
 using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -15,11 +16,6 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-
-// Register the DbContext.  This is VERY important.
-builder.Services.AddDbContext<MovieContext>(options =>
-        options.UseSqlite(builder.Configuration.GetConnectionString("MovieConnection"))  //Use connection string name
-);
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

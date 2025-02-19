@@ -18,4 +18,10 @@
       </PackageReference>
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Update="Views\Home\GetToKnowJoel.cs">
+        <DependentUpon>GetToKnowJoel.cshtml</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
 </Project>
