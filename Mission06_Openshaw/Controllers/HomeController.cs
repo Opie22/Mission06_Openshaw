@@ -45,4 +45,10 @@ public class HomeController : Controller
         }
         return View(movie); // Return the view with validation errors.
     }
+
+    public IActionResult MovieList()
+    {
+        List<Movie> movies = _context.Movies.ToList();
+        return View(movies);
+    }
 }
