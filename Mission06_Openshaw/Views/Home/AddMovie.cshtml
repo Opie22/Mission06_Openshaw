@@ -10,9 +10,11 @@
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
     <div>
-        <label asp-for="Category">Category:</label>
-        <input asp-for="Category" />
-        <span asp-validation-for="Category" class="text-danger"></span>
+        <label asp-for="CategoryId">Category:</label>
+        <select asp-for="CategoryId" asp-items="@(new SelectList(ViewBag.Categories, "CategoryId", "CategoryName"))">
+            <option value="">Select a Category</option>
+        </select>
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
     </div>
 
     <div>
@@ -46,7 +48,12 @@
 
     <div>
         <label asp-for="Edited">Edited?</label>
-        <input asp-for="Edited" type="checkbox" />
+        <input asp-for="Edited" type="radio" value="true" id="Edited_True" name="Edited" />
+        <label for="Edited_True">Yes</label>
+
+        <input asp-for="Edited" type="radio" value="false" id="Edited_False" name="Edited" />
+        <label for="Edited_False">No</label>
+
         <span asp-validation-for="Edited" class="text-danger"></span>
     </div>
 

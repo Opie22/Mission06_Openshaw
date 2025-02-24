@@ -31,6 +31,7 @@ public class HomeController : Controller
     [HttpGet]
     public IActionResult AddMovie()
     {
+        ViewBag.Categories = _context.Categories.ToList(); // Get categories
         return View(new Movie());
     }
     
@@ -39,16 +40,83 @@ public class HomeController : Controller
     {
         if (ModelState.IsValid)
         {
-            _context.Movies.Add(movie); // Now _context is properly initialized
+            _context.Movies.Add(movie);
             _context.SaveChanges();
-            return View("Confirmation", movie); // Pass the movie object for confirmation
+            return RedirectToAction("MovieList"); // Redirect to the movie list
         }
-        return View(movie); // Return the view with validation errors.
+        // IMPORTANT: Repopulate ViewBag.Categories if validation fails!
+        ViewBag.Categories = _context.Categories.ToList();
+        return View(movie);
     }
-
+    
+    
+    // Display Movie List
     public IActionResult MovieList()
     {
-        List<Movie> movies = _context.Movies.ToList();
+        var movies = _context.Movies
+            .Include(m => m.Category) // Include the related Category
+            .ToList();
         return View(movies);
     }
+
+    // Edit (GET - Display form)
+    [HttpGet]
+    public IActionResult Edit(int id)
+    {
+        var movie = _context.Movies
+            .Include(m => m.Category) // Include the Category
+            .FirstOrDefault(m => m.MovieId == id);
+
+        if (movie == null)
+        {
+            return NotFound();
+        }
+
+        ViewBag.Categories = _context.Categories.ToList(); // Get categories
+        return View(movie);
+    }
+
+    // Edit (POST - Handle form submission)
+    [HttpPost]
+    public IActionResult Edit(Movie movie)
+    {
+        if (ModelState.IsValid)
+        {
+            _context.Update(movie);
+            _context.SaveChanges();
+            return RedirectToAction("MovieList");
+        }
+        // IMPORTANT: Repopulate ViewBag.Categories if validation fails!
+        ViewBag.Categories = _context.Categories.ToList();
+        return View(movie);
+    }
+    
+    // Delete (GET - Confirmation)
+    [HttpGet]
+    public IActionResult Delete(int id)
+    {
+        var movie = _context.Movies.FirstOrDefault(m => m.MovieId == id);
+        if (movie == null)
+        {
+            return NotFound(); // Or handle appropriately
+        }
+        return View(movie);
+    }
+
+    // Delete (POST - Perform deletion)
+    [HttpPost]
+    public IActionResult DeleteConfirmed(int id)  //Different Action name
+    {
+        var movie = _context.Movies.FirstOrDefault(m => m.MovieId == id);
+
+        if (movie != null)
+        {
+            _context.Movies.Remove(movie);
+            _context.SaveChanges();
+        }
+
+        return RedirectToAction("MovieList");
+    }
+
+    
 }

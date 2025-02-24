@@ -1,3 +1,9 @@
+@model IEnumerable<Mission06_Openshaw.Models.Movie>
+
+
+@{
+    ViewData["Title"] = "Movie List"; // Best Practice: Set ViewData["Title"]
+}
 
 <!DOCTYPE html>
 
@@ -6,11 +12,11 @@
 <table class="table table-bordered table-striped">
     <thead>
     <tr>
+        <th>Category</th> @* Changed Order *@
         <th>Title</th>
         <th>Year</th>
         <th>Director</th>
         <th>Rating</th>
-        <th>Category</th>
         <th>Edited</th>
         <th>Lent To</th>
         <th>Notes</th>
@@ -22,15 +28,15 @@
     @foreach (var movie in Model)
     {
         <tr>
+            <td>@movie.Category?.CategoryName</td> @* Correct navigation property access *@
             <td>@movie.Title</td>
             <td>@movie.Year</td>
             <td>@movie.Director</td>
             <td>@movie.Rating</td>
-            <td>@movie.Category</td>
             <td>@(movie.Edited.HasValue ? (movie.Edited.Value ? "Yes" : "No") : "N/A")</td>
             <td>@movie.LentTo</td>
             <td>@movie.Notes</td>
-            <td>@(movie.CopiedToPlex ? "Yes" : "No")</td>
+            <td>@(movie.CopiedToPlex ? "Yes" : "No")</td> @* Correct boolean display *@
             <td>
                 <a asp-controller="Home" asp-action="Edit" asp-route-id="@movie.MovieId">Edit</a> |
                 <a asp-controller="Home" asp-action="Delete" asp-route-id="@movie.MovieId">Delete</a>
@@ -39,4 +45,3 @@
     }
     </tbody>
 </table>
-```
