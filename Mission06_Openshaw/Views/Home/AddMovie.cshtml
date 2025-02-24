@@ -6,8 +6,8 @@
 
 <h1>Add a Movie</h1>
 
-<form method="post" >
-
+<form method="post" asp-controller="Home" asp-action="AddMovie">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
     <div>
         <label asp-for="Category">Category:</label>
@@ -45,9 +45,8 @@
     </div>
 
     <div>
-        <label>Edited:</label>
-        <label><input type="radio" asp-for="Edited" value="true" /> Yes</label>
-        <label><input type="radio" asp-for="Edited" value="false" /> No</label>
+        <label asp-for="Edited">Edited?</label>
+        <input asp-for="Edited" type="checkbox" />
         <span asp-validation-for="Edited" class="text-danger"></span>
     </div>
 
@@ -60,6 +59,11 @@
         <label asp-for="Notes">Notes:</label>
         <input asp-for="Notes" maxlength="25" />
         <span asp-validation-for="Notes" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="CopiedToPlex">Copied to Plex?</label>
+        <input asp-for="CopiedToPlex" type="checkbox" />
+        <span asp-validation-for="CopiedToPlex" class="text-danger"></span>
     </div>
 
     <button type="submit">Add Movie</button>

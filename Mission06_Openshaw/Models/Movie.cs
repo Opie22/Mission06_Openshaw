@@ -5,7 +5,6 @@ namespace Mission06_Openshaw.Models;
 public class Movie
 {
         [Key]
-        [Required]
         public int MovieId { get; set; }
 
         [Required(ErrorMessage = "Category is required.")]
@@ -15,21 +14,25 @@ public class Movie
         public string Title { get; set; }
 
         [Required(ErrorMessage = "Year is required.")]
-        [Range(1888, 2100, ErrorMessage = "Year must be between 1888 and 2100.")] // Assuming movies started around 1888
+        [Range(1888, 3000, ErrorMessage = "Year must be between 1888 and 3000.")] // Changed max year
         public int Year { get; set; }
 
         [Required(ErrorMessage = "Director is required.")]
         public string Director { get; set; }
 
         [Required(ErrorMessage = "Rating is required.")]
-        public string Rating { get; set; } // G, PG, PG-13, R
+        public string Rating { get; set; }
 
-        public bool? Edited { get; set; } // Nullable bool (optional)
+        [Required(ErrorMessage = "Edited is required")]
+        public bool? Edited { get; set; } // Required, but still nullable bool
 
-        public string? LentTo { get; set; } // Optional
+        public string? LentTo { get; set; }
 
         [StringLength(25, ErrorMessage = "Notes cannot exceed 25 characters.")]
-        public string? Notes { get; set; } // Optional, limited to 25 chars
+        public string? Notes { get; set; }
+
+        [Required(ErrorMessage = "Copied to Plex is required")] //NEW FIELD
+        public bool CopiedToPlex {get; set;}
     
 }
 
