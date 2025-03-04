@@ -33,7 +33,7 @@
             <td>@movie.Year</td>
             <td>@movie.Director</td>
             <td>@movie.Rating</td>
-            <td>@(movie.Edited.HasValue ? (movie.Edited.Value ? "Yes" : "No") : "N/A")</td>
+            <td>@(movie.Edited ? "Yes" : "No")</td>
             <td>@movie.LentTo</td>
             <td>@movie.Notes</td>
             <td>@(movie.CopiedToPlex ? "Yes" : "No")</td> @* Correct boolean display *@

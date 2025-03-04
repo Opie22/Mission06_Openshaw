@@ -54,8 +54,23 @@ public class HomeController : Controller
     public IActionResult MovieList()
     {
         var movies = _context.Movies
-            .Include(m => m.Category) // Include the related Category
+            .Include(m => m.Category)
+            .Select(m => new Movie
+            {
+                MovieId = m.MovieId,
+                CategoryId = m.CategoryId,
+                CopiedToPlex = m.CopiedToPlex,
+                Director = m.Director ?? "Unknown",  // ✅ Handle NULL
+                Edited = m.Edited,  
+                LentTo = m.LentTo ?? "N/A",  // ✅ Handle NULL
+                Notes = m.Notes ?? "",  // ✅ Handle NULL
+                Rating = m.Rating ?? "Unrated",  // ✅ Handle NULL
+                Title = m.Title,
+                Year = m.Year,
+                Category = m.Category
+            })
             .ToList();
+
         return View(movies);
     }
 
