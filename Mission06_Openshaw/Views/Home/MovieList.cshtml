@@ -8,7 +8,14 @@
 <!DOCTYPE html>
 
 <h1>Movie List</h1>
-
+@* delete confirmation *@
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["Message"]
+        </div>
+    }
+    
 <table class="table table-bordered table-striped">
     <thead>
     <tr>

@@ -9,17 +9,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff0a776c-b822-4f38-bd0c-885966e74e93" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mission06_Openshaw/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mission06_Openshaw/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mission06_Openshaw/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mission06_Openshaw/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mission06_Openshaw/.idea/dataSources/3aaa030b-e83f-444a-8f1b-9ea8f6a687b2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mission06_Openshaw/.idea/dataSources/3aaa030b-e83f-444a-8f1b-9ea8f6a687b2/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mission06_Openshaw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mission06_Openshaw/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JoelHiltonMovies.sqlite" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/Controllers/HomeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/JoelHiltonMovieCollection.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/JoelHiltonMovieCollection.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Migrations/20250304231841_InitialCreate.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Migrations/20250304231841_InitialCreate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Migrations/MovieContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Models/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/Models/Category.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Models/Movie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/Models/Movie.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Models/MovieContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/Models/MovieContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/MovieList.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/MovieList.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/delete.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Openshaw/Views/Home/delete.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,6 +130,7 @@
       <workItem from="1740594776084" duration="1184000" />
       <workItem from="1741127115926" duration="3159000" />
       <workItem from="1741130296461" duration="616000" />
+      <workItem from="1743871045972" duration="1737000" />
     </task>
     <task id="LOCAL-00001" summary="First Push">
       <option name="closed" value="true" />

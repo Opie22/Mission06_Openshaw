@@ -120,14 +120,16 @@ public class HomeController : Controller
 
     // Delete (POST - Perform deletion)
     [HttpPost]
-    public IActionResult DeleteConfirmed(int id)  //Different Action name
+    public IActionResult DeleteConfirmed(int id)
     {
         var movie = _context.Movies.FirstOrDefault(m => m.MovieId == id);
 
         if (movie != null)
         {
+            string title = movie.Title; // Store the title before deleting
             _context.Movies.Remove(movie);
             _context.SaveChanges();
+            TempData["Message"] = $"The movie \"{title}\" was successfully deleted.";
         }
 
         return RedirectToAction("MovieList");

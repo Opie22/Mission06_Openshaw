@@ -14,7 +14,7 @@ namespace Mission06_Openshaw.Models
 
         // Navigation property
         [ForeignKey("CategoryId")] 
-        public Category Category { get; set; }
+        public Category? Category { get; set; }
 
         [Required(ErrorMessage = "Title is required.")]
         public string Title { get; set; } = string.Empty; // ✅ Prevent null issues

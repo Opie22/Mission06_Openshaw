@@ -6,12 +6,12 @@ namespace Mission06_Openshaw.Models
     public class Category
     {
         [Key]
-        public int CategoryId { get; set; } // Or whatever the PK column name is
+        public int CategoryId { get; set; } //  column name
 
         [Required]
-        public string CategoryName { get; set; } // Or whatever the category name column is
+        public string  CategoryName { get; set; } //  category name column 
 
         // Navigation property:  A Category can have many Movies
-        public ICollection<Movie> Movies { get; set; }
+        public ICollection<Movie>? Movies { get; set; }
     }
 }

@@ -20,7 +20,7 @@
     </dl>
 
     <form asp-controller="Home" asp-action="DeleteConfirmed" method="post">
-        <input type="hidden" asp-for="MovieId" />
+        <input type="hidden" name="id" value="@Model.MovieId" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
         <a asp-controller="Home" asp-action="MovieList">Back to List</a>
     </form>
